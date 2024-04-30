@@ -1,0 +1,253 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+header, .Header-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.Header-Container a {
+  font-size: 4em;
+  font-weight: 900;
+  text-decoration: none;
+  color: rgb(4, 21, 64);
+}
+
+.Header-Container a span {
+  font-style: italic;
+}
+
+.Body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  height: auto;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.progress-container.show {
+  opacity: 1;
+}
+
+.Cards-Images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.CI__Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+}
+
+.Card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 250px;
+  height: 300px;
+  background-color: rgb(158, 158, 156);
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.Card img {
+  width: 80%;
+}
+
+.Card span {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: rgb(4, 21, 64);
+  color: white;
+  font-size: 12px;
+  font-weight: 900;
+  border-radius: 10px;
+  padding: 5px;
+  transform: translateY(-50px);
+  transition: all ease-in-out .5s;
+}
+
+.Card div h2 {
+  font-size: 1em;
+}
+
+.Card {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.Card.visible {
+  opacity: 1;
+}
+
+.Card.visible span {
+  transform: translate(0px);
+}
+
+select {
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  margin-right: 15px;
+  background-color: rgb(18, 37, 85);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  padding-left: 5px;
+  padding-right: 5px;
+  cursor: pointer;
+  transition: all ease-in-out .2s;
+}
+
+select:hover {
+  background-color: rgb(4, 21, 64);
+}
+
+.ICC-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Action-File {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type="file"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  height: 30px;
+  background-color: white;
+  border: 2px dotted blue;
+  padding-top: 10px;
+  padding-left: 8px;
+  border-radius: 15px;
+  color: blue;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.Convert {
+  height: 40px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: blue;
+  font-size: 15px;
+  font-weight: 900;
+  transition: all ease-in-out .2s;
+  cursor: pointer;
+}
+
+.Convert:hover {
+  background-color: rgb(59, 59, 168);
+}
+
+.Download {
+  height: 40px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 900;
+  transition: all ease-in-out .2s;
+  cursor: pointer;
+}
+
+.Download:enabled {
+  height: 40px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: rgb(5, 87, 5);
+  font-size: 15px;
+  font-weight: 900;
+  transition: all ease-in-out .2s;
+  cursor: pointer;
+}
+
+.Buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .Header-Container a {
+    font-size: 2em;
+  }
+
+  .ICC-Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .Action-File {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .Card div h2 {
+    font-size: 12px;
+  }
+
+  .Card {
+    width: 150px;
+    height: 200px;
+}
+
+.Card span {
+  font-size: 8px;
+}
+
+
+}
